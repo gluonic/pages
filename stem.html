@@ -1,0 +1,254 @@
+<html>
+<head><title>Stemtest</title>
+	<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script></head>
+<body>
+	<div class="screen" id="screen1">
+		<div class="title">Federale verkiezingen</div>
+		<div class="list">
+			<span class="box party">Vlaams Belang</span>
+			<span class="box party">Open VLD</span>
+			<span class="box party">CD&V</span>
+			<span class="box party">Vooruit</span>
+			<span class="box party">Groen</span>
+			<span class="box party">N-VA</span>
+			<span class="box party">PVDA</span>
+			<span class="box party">Blanco stem</span>
+		</div>
+		<div class="message">Druk op een lijst of op blanco stem</div>
+		<div class="buttonbar">
+			<button class="back">ga terug</button>
+			<button class="proceed">bevestig uw keuze</button>
+		</div>
+	</div>
+	<div class="screen" id="screen2">
+		<div class="title">Federale verkiezingen</div>
+		<div class="list">
+			<span class="box kop">Vooruit</span>
+			<span class="box peeps">Melissa Depraetere</span>
+			<span class="box peeps">Caroline Gennez</span>
+			<span class="box peeps">Frank Vandenbroucke</span>
+			<span class="box peeps">Ans Persoons</span>
+			<span class="box peeps">...</span>
+			<span class="box peeps">...</span>
+			<span class="box peeps">...</span>
+		</div>
+		<div class="message">Druk op een kandidaat of kies een kopstem</div>
+		<div class="buttonbar">
+			<button class="back">ga terug</button>
+			<button class="proceed">bevestig uw keuze</button>
+		</div>
+	</div>
+	<div class="screen" id="screen3">
+		<div class="title">Vlaamse verkiezingen</div>
+		<div class="list">
+			<span class="box party">Vlaams Belang</span>
+			<span class="box party">Open VLD</span>
+			<span class="box party">CD&V</span>
+			<span class="box party">Vooruit</span>
+			<span class="box party">Groen</span>
+			<span class="box party">N-VA</span>
+			<span class="box party">PVDA</span>
+			<span class="box party">Blanco stem</span>
+		</div>
+		<div class="message">Druk op een lijst of op blanco stem</div>
+		<div class="buttonbar">
+			<button class="back">ga terug</button>
+			<button class="proceed">bevestig uw keuze</button>
+		</div>
+	</div>
+	<div class="screen" id="screen4">
+		<div class="title">Vlaamse verkiezingen</div>
+		<div class="list">
+			<span class="box kop">Vooruit</span>
+			<span class="box peeps">Melissa Depraetere</span>
+			<span class="box peeps">Caroline Gennez</span>
+			<span class="box peeps">Frank Vandenbroucke</span>
+			<span class="box peeps">Ans Persoons</span>
+			<span class="box peeps">...</span>
+			<span class="box peeps">...</span>
+			<span class="box peeps">...</span>
+		</div>
+		<div class="message">Druk op een kandidaat of kies een kopstem</div>
+		<div class="buttonbar">
+			<button class="back">ga terug</button>
+			<button class="proceed">bevestig uw keuze</button>
+		</div>
+	</div>
+	<div class="screen" id="screen5">
+		<div class="title">Europese verkiezingen</div>
+		<div class="list">
+			<span class="box party">Vlaams Belang</span>
+			<span class="box party">Open VLD</span>
+			<span class="box party">CD&V</span>
+			<span class="box party">Vooruit</span>
+			<span class="box party">Groen</span>
+			<span class="box party">N-VA</span>
+			<span class="box party">PVDA</span>
+			<span class="box party">Blanco stem</span>
+		</div>
+		<div class="message">Druk op een lijst of op blanco stem</div>
+		<div class="buttonbar">
+			<button class="back">ga terug</button>
+			<button class="proceed">bevestig uw keuze</button>
+		</div>
+	</div>
+	<div class="screen" id="screen6">
+		<div class="title">Europese verkiezingen</div>
+		<div class="list">
+			<span class="box kop">Vooruit</span>
+			<span class="box peeps">Melissa Depraetere</span>
+			<span class="box peeps">Caroline Gennez</span>
+			<span class="box peeps">Frank Vandenbroucke</span>
+			<span class="box peeps">Ans Persoons</span>
+			<span class="box peeps">...</span>
+			<span class="box peeps">...</span>
+			<span class="box peeps">...</span>
+		</div>
+		<div class="message">Druk op een kandidaat of kies een kopstem</div>
+		<div class="buttonbar">
+			<button class="back">ga terug</button>
+			<button class="proceed">bevestig uw keuze</button>
+		</div>
+	</div>
+	<div class="screen" id="screen7">
+		<div style="height: 100%;width: 100%;display: flex;flex-direction: column;align-items: center;justify-content: center;">
+			<div style="font-size: 58px;color: #008c00;">&#10004;</div>
+			<div style="font-size: 30px;">Proficiat, U heeft geldig gestemd</div>
+			<div style="font-size: 25px;margin-top: 20px;">Neem uw ticket en kaart mee terug</div>
+		</div>
+	</div>
+</body>
+<script>
+	$('.box').click(function() {
+		var screen = $(this).closest('.screen')
+		$(screen).find('.party').not(this).removeClass('selected')
+		$(screen).find('.peeps').not(this).removeClass('selected')
+		$(this).toggleClass('selected')
+		$(screen).find('.message').hide()
+		$(screen).find('.buttonbar').show().css('display', 'flex')
+	})
+	$('.proceed').click(function(){
+		var screen = $(this).closest('.screen')
+		if (screen.attr('id') === 'screen1') {
+			$('#screen1').hide()
+			$('#screen2').show()
+		}
+		if (screen.attr('id') === 'screen2') {
+			$('#screen2').hide()
+			$('#screen3').show()
+		}
+		if (screen.attr('id') === 'screen3') {
+			$('#screen3').hide()
+			$('#screen4').show()
+		}
+		if (screen.attr('id') === 'screen4') {
+			$('#screen4').hide()
+			$('#screen5').show()
+		}
+		if (screen.attr('id') === 'screen5') {
+			$('#screen5').hide()
+			$('#screen6').show()
+		}
+		if (screen.attr('id') === 'screen6') {
+			$('#screen6').hide()
+			$('#screen7').show()
+		}
+	})
+</script>
+<style>
+body {
+    padding: 0;
+	margin: 0;
+    box-sizing: border-box;
+}
+* {box-sizing: border-box;}
+#screen1,#screen2,#screen3,#screen4,#screen5,#screen6,#screen7 {
+	border: 2px solid;
+	width: calc(100vw - 30px);
+	height: calc(100vh - 30px);
+	position: relative;
+}
+#screen2,#screen3,#screen4,#screen5,#screen6,#screen7 {display: none;}
+
+.title{
+border-bottom: 2px solid;
+    padding: 10px 0 20px 30px;
+    font-size: 20px;
+}
+.list {
+	height: calc(100% - 125px);
+	display: flex;
+	flex-wrap: wrap;
+	gap: 15px;
+}
+.list span {
+	width: 30%;
+	border: 1px solid;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 20px 30px;
+	font-weight: bold;
+	cursor: pointer;
+}
+.buttonbar {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+	display: none;
+}
+button {
+	padding: 15px;
+	background-color: #979494;
+    color: black;
+    font-size: large;
+	cursor: pointer;
+}
+.message {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.message, .buttonbar {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 60px;
+}
+.box.selected{ background: #979494; }
+.box.kop {
+	width: 100%;
+	position: relative;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+	align-items: flex-start;
+    border: 2px solid;
+    padding: 0 30px 0 72px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.box.kop:before {
+	content: "";
+	position: absolute;
+	width: 60px;
+    height: 100%;
+    background: black;
+	left: 5px;
+}
+.box.kop:after {
+	content: "";
+	position: absolute;
+	background: white;
+    width: 28px;
+    height: 28px;
+    left: 23px;
+    border-radius: 50%;
+}
+</style>
+</html>
