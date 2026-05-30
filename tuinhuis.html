@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuinhuis Overzicht</title>
+    <style>
+        body { font-family: sans-serif; background-color: #f4f4f4; padding: 20px; }
+        h1 { text-align: center; color: #333; }
+        .container { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+        .card { background: white; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); width: 300px; overflow: hidden; display: flex; flex-direction: column; }
+        .card img { width: 100%; height: 200px; object-fit: contain; background: #eee; }
+        .content { padding: 15px; flex-grow: 1; }
+        .shop { font-size: 0.8rem; color: #777; text-transform: uppercase; font-weight: bold; }
+        .title { font-size: 1.1rem; margin: 10px 0; font-weight: bold; height: 3em; overflow: hidden; }
+        .price { font-size: 1.4rem; color: #e44d26; font-weight: bold; margin-bottom: 10px; }
+        .specs { font-size: 0.9rem; color: #555; line-height: 1.4; }
+        .btn { display: block; text-align: center; background: #0056b3; color: white; padding: 10px; text-decoration: none; border-radius: 0 0 8px 8px; margin-top: auto; }
+        .tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; margin-bottom: 5px; color: white; }
+        .wood { background: #8d6e63; }
+        .plastic { background: #4caf50; }
+        .metal { background: #78909c; }
+            .card-link {
+                color: inherit;
+                text-decoration: none;
+                display: block;
+                height: 100%;
+            }
+            .card {
+                cursor: pointer;
+                transition: box-shadow 0.2s;
+            }
+            .card:hover {
+                box-shadow: 0 4px 12px rgba(0,0,0,0.18);
+                transform: translateY(-2px);
+            }
+            .btn { pointer-events: none; opacity: 0.85; }
+    </style>
+</head>
+<body>
+
+<h1>Tuinhuis Selectie</h1>
+
+<div class="container">
+    <a class="card-link" href="https://www.hubo.be/nl/p/keter-darwin-66-kunststof-tuinhuis-190x183x221-cm-grijs/977997/" target="_blank">
+      <div class="card">
+        <img src="https://media2.hubo.be/img/Darwin-66-kunststof-tuinhuis-190x183x221-cm-grijs_07290112634641.jpg?base=derivates&s1=3&s2=001&s3=537&s4=122&name=Article_1599662658486549_000.jpg" alt="Keter Darwin 66">
+        <div class="content">
+            <span class="tag plastic">Kunststof</span>
+            <div class="shop">Hubo</div>
+            <div class="title">Keter Darwin 66 Grijs</div>
+            <div class="price">€599,00 <del>€759,-</del></div>
+            <div class="specs">
+                <strong>Afmetingen:</strong> 190 x 183 x 221 cm<br>
+                <strong>Afwerking:</strong> Houtlook<br>
+                <strong>Garantie:</strong> 10 jaar
+            </div>
+        </div>
+        <div class="btn">Bekijk Product</div>
+      </div>
+    </a>
+
+    <a class="card-link" href="https://www.brico.be/nl/tuin-terras-buitenleven/tuinhuizen-bergingen/tuinhuizen/kunststof-tuinhuizen/keter-tuinhuis-darwin-66-kunststof-groen-190x183x221cm-3-48m2/10127746" target="_blank">
+      <div class="card">
+        <img src="https://d2fb1ew6v6wv87.cloudfront.net/products/10127746/s01/424x424/origin.webp" alt="Keter Darwin 66">
+        <div class="content">
+            <span class="tag plastic">Kunststof</span>
+            <div class="shop">Brico</div>
+            <div class="title">Keter Darwin 66 Groen</div>
+            <div class="price">713,00</div>
+            <div class="specs">
+                <strong>Afmetingen:</strong> 190 x 183 x 221 cm<br>
+            </div>
+        </div>
+        <div class="btn">Bekijk Product</div>
+      </div>
+    </a>
+
+
+
+    <a class="card-link" href="https://www.brico.be/nl/tuin-terras-buitenleven/tuinhuizen-bergingen/tuinhuizen/metalen-tuinhuizen/expertland-tuinhuis-adelmo-grijsbruin-l-203cm-x-b-181cm-x-h-213cm/10366235" target="_blank">
+      <div class="card">
+        <img src="https://d2fb1ew6v6wv87.cloudfront.net/products/10366235/s00/424x424/origin.webp" alt="Expertland Adelmo">
+        <div class="content">
+            <span class="tag metal">Metaal</span>
+            <div class="shop">Brico (Online)</div>
+            <div class="title">Expertland Tuinhuis Adelmo Grijsbruin</div>
+            <div class="price">€547,18</div>
+            <div class="specs">
+                <strong>Afmetingen:</strong> 203cm X B 181cm X H 213cm<br>
+            </div>
+        </div>
+        <div class="btn">Bekijk Product</div>
+      </div>
+    </a>
+
+    <a class="card-link" href="https://www.brico.be/nl/tuin-terras-buitenleven/tuinhuizen-bergingen/tuinhuizen/metalen-tuinhuizen/h-j-tuinhuisje-metaal-rosas-4-07-m2-met-goot-groen/10484118" target="_blank">
+      <div class="card">
+        <img src="https://d2fb1ew6v6wv87.cloudfront.net/products/10484118/s00/424x424/origin.webp" alt="Expertland Adelmo">
+        <div class="content">
+            <span class="tag metal">Metaal</span>
+            <div class="shop">Brico</div>
+            <div class="title">H&j - Tuinhuisje Metaal - Rosas</div>
+            <div class="price">€329</div>
+            <div class="specs">
+                <strong>Afmetingen:</strong> 191 x 213 x 195 cm<br>
+                <strong>Materiaal:</strong> Met goot<br>
+            </div>
+        </div>
+        <div class="btn">Bekijk Product</div>
+      </div>
+    </a>
+
+    <a class="card-link" href="https://www.brico.be/nl/tuin-terras-buitenleven/tuinhuizen-bergingen/tuinhuizen/metalen-tuinhuizen/helloshop26-tuinschuur-van-gegalvaniseerd-staal-geventileerde-schuifdeur-192x191x223-cm/10493434" target="_blank">
+      <div class="card">
+        <img src="https://d2fb1ew6v6wv87.cloudfront.net/products/10493434/s00/424x424/origin.webp" alt="Expertland Adelmo">
+        <div class="content">
+            <span class="tag metal">Metaal</span>
+            <div class="shop">Brico</div>
+            <div class="title">Helloshop26 - Tuinschuur Van Gegalvaniseerd Staal</div>
+            <div class="price">€547</div>
+            <div class="specs">
+                <strong>Afmetingen:</strong> 192x191x223 cm<br>
+            </div>
+        </div>
+        <div class="btn">Bekijk Product</div>
+      </div>
+    </a>
+
+    <a class="card-link" href="https://www.brico.be/nl/tuin-terras-buitenleven/tuinhuizen-bergingen/tuinhuizen/metalen-tuinhuizen/helloshop26-tuinschuur-van-gegalvaniseerd-staal-geventileerde-opbergruimte-192x191x223-cm/10494020" target="_blank">
+      <div class="card">
+        <img src="https://d2fb1ew6v6wv87.cloudfront.net/products/10494020/s00/424x424/origin.webp" alt="Expertland Adelmo">
+        <div class="content">
+            <span class="tag metal">Metaal</span>
+            <div class="shop">Brico</div>
+            <div class="title">Helloshop26 - Tuinschuur Van Gegalvaniseerd Staal</div>
+            <div class="price">€526</div>
+            <div class="specs">
+                <strong>Afmetingen:</strong> 192x191x223 cm<br>
+                <strong>Materiaal:</strong> Gegalvaniseerd staal<br>
+            </div>
+        </div>
+        <div class="btn">Bekijk Product</div>
+      </div>
+    </a>
+
+     
+    <a class="card-link" href="https://www.brico.be/nl/tuin-terras-buitenleven/tuinhuizen-bergingen/tuinhuizen/houten-tuinhuizen/solid-tuinhuis-initia-mayenne-geimpregneerd-212x185cm/5276457" target="_blank">
+      <div class="card">
+        <img src="https://d2fb1ew6v6wv87.cloudfront.net/products/5276457/s01/424x424/origin.webp" alt="Solid Initia Mayenne">
+        <div class="content">
+            <span class="tag wood">Hout</span>
+            <div class="shop">Brico</div>
+            <div class="title">Solid Initia Mayenne Geïmpregneerd</div>
+            <div class="price">€774,00</div>
+            <div class="specs">
+                <strong>Afmetingen:</strong> 212 x 185 cm<br>
+                <strong>Materiaal:</strong> Vurenhout (12mm)<br>
+                <strong>Vloer:</strong> Inbegrepen
+            </div>
+        </div>
+        <div class="btn">Bekijk Product</div>
+      </div>
+    </a>
+
+    <a class="card-link" href="https://www.brico.be/nl/tuin-terras-buitenleven/tuinhuizen-bergingen/tuinhuizen/houten-tuinhuizen/timbela-m309-houten-tuinschuur-3-53-m2-tuinhuis-voor-gereedschaps-en-fietsenstalling/10296666" target="_blank">
+      <div class="card">
+        <img src="https://d2fb1ew6v6wv87.cloudfront.net/products/10296666/s00/424x424/origin.webp" alt="Timbela M309">
+        <div class="content">
+            <span class="tag wood">Hout</span>
+            <div class="shop">Brico (Online)</div>
+            <div class="title">Timbela M309 Houten Tuinschuur</div>
+            <div class="price">€826,00</div>
+            <div class="specs">
+                <strong>Oppervlakte:</strong> 3.53 m²<br>
+                <strong>Afmetingen:</strong> 204 x 204 cm<br>
+                <strong>Wanddikte:</strong> 19 mm
+            </div>
+        </div>
+        <div class="btn">Bekijk Product</div>
+      </div>
+    </a>
+
+    <a class="card-link" href="https://www.hubo.be/nl/p/gardenas-innsbruck-houten-tuinhuis-205x205x203-cm-blokhut-geimpregneerd/1059735/" target="_blank">
+      <div class="card">
+        <img src="https://media2.hubo.be/img/Innsbruck-houten-tuinhuis-205x205x203-cm-blokhut-geimpregneerd_05411249918141.jpg?base=derivates&s1=3&s2=001&s3=465&s4=592&name=05411249918141_C1R0_1000171.jpg" alt="">
+        <div class="content">
+            <span class="tag wood">Hout</span>
+            <div class="shop">Hubo</div>
+            <div class="title">Gardenas Innsbruck geïmpregneerd</div>
+            <div class="price">1005,00</div>
+            <div class="specs">
+                <strong>Afmetingen:</strong> 205 x 205 cm<br>
+                <strong>Wanddikte:</strong> 19 mm
+            </div>
+        </div>
+        <div class="btn">Bekijk Product</div>
+      </div>
+    </a>
+    
+    <div class="card">
+        <img src="https://media2.hubo.be/img/Sara-houten-tuinhuis-200x200x216,6-cm-blokhut_04743329243227.jpg?base=derivates&s1=3&s2=001&s3=586&s4=713&name=04743329243227_C1L0_1003087.jpg" alt="">
+        <div class="content">
+            <span class="tag wood">Hout</span>
+            <div class="shop">Hubo</div>
+            <div class="title">Outdoor Life Products Sara</div>
+            <div class="price">1349,00</div>
+            <div class="specs">
+                <strong>Afmetingen:</strong> 200 x 200 cm<br>
+                <strong>Wanddikte:</strong> 28 mm
+            </div>
+        </div>
+        <a href="https://www.hubo.be/nl/p/outdoor-life-products-sara-houten-tuinhuis-200x200x216-6-cm-blokhut/1089917/" class="btn">Bekijk Product</a>
+    </div>
+   
+    <a class="card-link" href="https://www.hubo.be/nl/p/gardenas-innsbruck-houten-tuinhuis-205x205x203-5-cm-blokhut/340917/" target="_blank">
+      <div class="card">
+        <img src="https://media2.hubo.be/img/Innsbruck-houten-tuinhuis-205x205x203,5-cm-blokhut_05411249904236.jpg?base=derivates&s1=3&s2=001&s3=465&s4=554&name=05411249904236_C1R0_1000171.jpg" alt="Gardenas Innsbruck">
+        <div class="content">
+            <span class="tag wood">Hout</span>
+            <div class="shop">Hubo</div>
+            <div class="title">Gardenas Innsbruck Blokhut</div>
+            <div class="price">€855,00</div>
+            <div class="specs">
+                <strong>Afmetingen:</strong> 205 x 205 x 203 cm<br>
+                <strong>Materiaal:</strong> Onbehandeld vurenhout<br>
+                <strong>Dikte:</strong> 19 mm
+            </div>
+        </div>
+        <div class="btn">Bekijk Product</div>
+      </div>
+    </a>
+ 
+
+ 
+</div>
+
+</body>
+</html>
